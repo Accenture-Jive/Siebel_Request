@@ -230,7 +230,7 @@ $(document).ready(function () {
 	$('a.create').live('click', function(){
 		$('a.displayList').removeClass('active');
 		$(this).addClass('active');
-		
+		alert("creating");
 		$('#xmlTable').hide();
 		$('#canvas').hide();
 		$('#discussTable').hide();
