@@ -10,7 +10,7 @@ $(document).ready(function () {
 	var totalRecords= 0;
 	var viewer;
 	var srNumberRefer = "";
-	
+	alert("on loading....");
  	function init() {
 		registerEvents();
 		viewer = opensocial.data.getDataContext().getDataSet('viewer');
@@ -215,7 +215,7 @@ $(document).ready(function () {
 	$('a.displayList').click(function(){
 		$('a.create').removeClass('active');
 		$(this).addClass('active');
-		
+		alert("display");
 		$('#createTable').hide();
 		$('#xmlTable').show();
 		$('table.data-grid tr').removeClass('active');
