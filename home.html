@@ -5,6 +5,7 @@
 <head>
   <meta name="generator" content=
   "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+  <link href="stylesheets/formulaire-css3.css" rel="stylesheet" type="text/css" />
 <!--  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="stylesheets/jive.css" type="text/css" media="screen" />
 -->
@@ -310,7 +311,25 @@ background-color: #658AC3;
 <title>My Siebel Service Requests - Home</title>
 </head>
 <body>
+<div id="LoginScreen" style="display:none">
+<form class="loginFormClass" id="loginForm" name="loginForm">
+	<h1>Login - Siebel</h1>
+	<p>
+		<label for="uname">Username</label>
+		<input id="uname" name="uname" type="text" />
+	</p>
+	<p>
+		<label for="pword">Password</label>
+		<input id="pword" name="pword" type="password" />
+	</p>
 
+	<div id="login-button" class="clearfix">
+		<input id="loginSiebel" class="gen-button-font gen-button" type="button" name="login" value="Log in"/>
+	</div>
+	
+	<div id="loginStatus"> </div>
+</form>
+</div>
 <div id="HomeView">
   <table id="xmlTable" class="data-grid">
     <thead>
