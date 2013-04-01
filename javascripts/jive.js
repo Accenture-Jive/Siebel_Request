@@ -1,5 +1,5 @@
 $(document).ready(function () {
-alert("hello");	
+alert("hi");	
 	//Get the list of SRs assigned to the current user
 	var xmlDoc = ''; //XML String used for Parsing and like.
 	var srNoDisc = ''; //SR Number used for Discussions.
