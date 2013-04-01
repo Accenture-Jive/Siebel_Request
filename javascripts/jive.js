@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 	//Initialize Buddy List
 	init();
-	
+	alert("hello");
 	//Get group information of current user
 	osapi.groups.get({
 		  userId: "@me",
