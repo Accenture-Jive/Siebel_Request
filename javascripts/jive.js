@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	
+alert("hello");	
 	//Get the list of SRs assigned to the current user
 	var xmlDoc = ''; //XML String used for Parsing and like.
 	var srNoDisc = ''; //SR Number used for Discussions.
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 	//Initialize Buddy List
 	init();
-	alert("hello");
+	
 	//Get group information of current user
 	osapi.groups.get({
 		  userId: "@me",
