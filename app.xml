@@ -31,6 +31,8 @@
 
 
   </ModulePrefs>
+  <UserPref name="UserName" display_name="Siebel Account Username" datatype="string" default_value="" required="false" />
+  <UserPref name="Password" display_name="Siebel Account Password (Encrypted)" datatype="string" default_value="" required="false" />
   
   <Content type="html" view="home" href="home.html" preferred_height="400" />
   <Content type="html" view="canvas" href="canvas.html" preferred_height="900"/>
