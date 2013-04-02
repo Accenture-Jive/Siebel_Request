@@ -5,7 +5,6 @@
 <head>
   <meta name="generator" content=
   "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
-  <link href="stylesheets/formulaire-css3.css" rel="stylesheet" type="text/css" />
 <!--  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="stylesheets/jive.css" type="text/css" media="screen" />
 -->
@@ -293,6 +292,7 @@ background-color: #658AC3;
 .roweven {
   background-color: #D1DCE9;
 }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -305,96 +305,13 @@ background-color: #658AC3;
   display: inline-block;
 }
 /*New Home Ends */
-
-/*Chrom Style - Top Menu */
-
-.chromestyle{
-width: 100%;
-font-weight: bold;
-}
-
-.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
-content: "."; 
-display: block; 
-height: 0; 
-clear: both; 
-visibility: hidden;
-}
-
-.chromestyle ul{
-border: 1px solid #BBB;
-width: 100%;
-background: url(../images/chromebg2.gif) center center repeat-x; /*THEME CHANGE HERE*/
-padding: 4px 0;
-margin: 0;
-text-align: center; /*set value to "left", "center", or "right"*/
-}
-
-.chromestyle ul li{
-display: inline;
-}
-
-.chromestyle ul li a{
-color: #494949;
-padding: 4px 7px;
-margin: 0;
-text-decoration: none;
-border-right: 1px solid #B5E2FE; /*THEME CHANGE HERE*/
-}
-
-.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
-background: url(../images/chromebg2-over.gif) center center repeat-x; /*THEME CHANGE HERE*/
-}
-form.loginFormClass{
-	background:#f7f7f7;
-	background:-moz-linear-gradient(90deg, #ccc, #fff); /* Firefox */
-	background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc)); /* Webkit */
-	border:1px solid #aaa;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-box-shadow:0 0 15px #aaa;
-	-webkit-box-shadow:0 0 15px #aaa;
-	margin:40px auto 0;
-	padding:20px;
-	width:300px;
-}
-/*New Home Ends */
-
 </style>
 
 <title>My Siebel Service Requests - Home</title>
 </head>
 <body>
-<div id="LoginScreen" style="display:none">
-<form class="loginFormClass" id="loginForm" name="loginForm">
-	<h1>Login - Siebel</h1>
-	<p>
-		<label for="uname">Username</label>
-		<input id="uname" name="uname" type="text" />
-	</p>
-	<p>
-		<label for="pword">Password</label>
-		<input id="pword" name="pword" type="password" />
-	</p>
 
-	<div id="login-button" class="clearfix">
-		<input id="loginSiebel" class="gen-button-font gen-button" type="button" name="login" value="Log in"/>
-	</div>
-	
-	<div id="loginStatus"> </div>
-</form>
-</div>
 <div id="HomeView">
-	<div class="chromestyle" id="chromemenu">
-		<ul>
-			<li>Welcome, <a href="#" id ="myID" rel="dropmenu1"></a></li>
-		</ul>
-	</div>
-													  
-	<div id="dropmenu1" class="dropmenudiv">
-		<!-- <a href="" id="changePref">Change Preferences</a> -->
-		<a href="" id="logOut">Logout</a>
-	</div>
   <table id="xmlTable" class="data-grid">
     <thead>
       <tr>
