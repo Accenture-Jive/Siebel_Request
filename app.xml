@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module specificationVersion="1">
-  <ModulePrefs title="My Siebel Service Requests-Test"
-               description="Test-Siebel Service Requests in Jive."
+  <ModulePrefs title="My Siebel Service Requests"
+               description="Siebel Service Requests in Jive."
                author="pradeep"
                author_affiliation="Accenture"
                author_email="pradeep.tammineni@accenture.com">
@@ -19,10 +19,6 @@
     <Require feature="views" />
 	<Require feature="minimessage"/>
 	
-		<!-- For setting preferences from app-->
-	<Require feature="setprefs"/>
-	<!-- End -->
-	
 	<!-- Added for maximizing the height of canvas -->
     <Require feature="dynamic-height" />
     <Require feature="jive-canvas-v1"/> 
@@ -35,10 +31,7 @@
 
 
   </ModulePrefs>
-   <!-- For setting preferences from app-->
-  <UserPref name="UserName" display_name="Siebel Account Username" datatype="string" default_value="" required="false" />
-  <UserPref name="Password" display_name="Siebel Account Password (Encrypted)" datatype="string" default_value="" required="false" />
-  <!-- End -->
+  
   <Content type="html" view="home" href="home.html" preferred_height="400" />
   <Content type="html" view="canvas" href="canvas.html" preferred_height="900"/>
   
