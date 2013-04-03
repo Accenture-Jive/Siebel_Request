@@ -21,13 +21,13 @@
 	function showLoading() 
 	{
 		//console.log("inside show loading");
-		$("#LoginScreen").mask("Please Wait...");
+		$("#loadMask").mask("Please Wait...");
 	}
 
 	function hideLoading() 
 	{
 		//console.log("inside hide loading");
-		$("#LoginScreen").unmask();
+		$("#loadMask").unmask();
 	}  
 	
 	function decryptPassword(pString) 
