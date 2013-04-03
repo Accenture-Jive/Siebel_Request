@@ -41,7 +41,7 @@
   <UserPref name="Password" display_name="Siebel Account Password (Encrypted)" datatype="string" default_value="" required="false" />
   <!-- End -->
   
-  <Content type="html" view="home" href="home.html" preferred_height="400" />
+  <Content type="html" view="home" href="home.html" preferred_height="500" />
   <Content type="html" view="canvas" href="canvas.html" preferred_height="900"/>
   
 </Module>
