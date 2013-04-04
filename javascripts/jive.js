@@ -544,15 +544,15 @@ $(document).ready(function () {
 		}
 		if(srType != "" && srType != null)
 		{
-		createXML = createXML + '<ws:ServiceRequestType>'+srType+'</ws:ServiceRequestType><ws:INSProduct>'+srType+'</ws:INSProduct>';
+		//createXML = createXML + '<ws:ServiceRequestType>'+srType+'</ws:ServiceRequestType><ws:INSProduct>'+srType+'</ws:INSProduct>';
 		}
 		if(srArea != "" && srArea != null)
 		{
-		 createXML = createXML + '<ws:Area>'+srArea+'</ws:Area>';
+		 //createXML = createXML + '<ws:Area>'+srArea+'</ws:Area>';
 		}
 		if(srSubArea != "" && srSubArea != null)
 		{
-		createXML = createXML + '<ws:Sub-Area>'+srSubArea+'</ws:Sub-Area>'; 
+		//createXML = createXML + '<ws:Sub-Area>'+srSubArea+'</ws:Sub-Area>'; 
 		}
 		if(idUserSiebel != "" && idUserSiebel != null)
 		{
