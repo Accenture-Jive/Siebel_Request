@@ -661,6 +661,56 @@ $(document).ready(function () {
 			$('table.data-grid tr').removeClass('active');
 			gadgets.window.adjustHeight();			
 	});
+	
+		//Logout -- Clear the credentials and take the user
+	//back to the login form.
+	$('a#logOut').live('click', function(){	
+		var prefs = new gadgets.Prefs();
+		prefs.set("UserName","");
+		prefs.set("Password","");
+		//console.log("You have been logged out.");
+		document.getElementById('TableBody').innerHTML = "";
+		$('#LoginScreen').show();
+		
+		$('#topBanner').hide();
+		$("#pager").hide();
+		$('#xmlTable').hide();
+		$('#canvas').hide();
+		$("#discussTable").hide();
+		$("#createTable").hide();
+		$("#ReferPage").hide();
+		//$('#showCanvasView').hide();
+		
+		gadgets.window.adjustHeight();
+	});	
+
+	//Login Form
+	$('#loginSiebel').live('click', function(){
+		SiebelUser = $('#uname').val();
+		SiebelPassword = $('#pword').val(); //this needs to be encrypted
+		if (SiebelUser == "" || SiebelPassword == "")
+		{
+			document.getElementById('loginStatus').innerHTML = "Please enter your Siebel credentials";
+			$('#loginStatus').show();
+			document.loginForm.uname.focus();
+		}
+		else
+		{
+			var prefs = new gadgets.Prefs();
+			showLoading();
+			yourSiebelUser = prefs.getString("UserName"); 
+			//console.log("Your Old Siebel User name: "+yourSiebelUser);		
+			prefs.set("UserName",SiebelUser);
+			var encPass= encryptPassword(SiebelPassword); //Encrypting the password
+			prefs.set("Password",encPass); //Saving the encrypted password to user prefs
+			document.getElementById('userID').innerHTML = SiebelUser; //Setting the username in the User Menu on top.
+			//$('#loginStatus').hide();
+			//$('#LoginScreen').hide();
+			//$('#uname').val('');
+			//$('#pword').val('');
+			loadTheRecords();
+		}
+	});
 
 	//Update the record -- invoked on click of "editDisplay" button
 	function UpdateRecord (srNo, srAccount, srArea, srSubArea, srType, srStatus, srSeverity, srDesc, srLongDesc, srDiscussion){
