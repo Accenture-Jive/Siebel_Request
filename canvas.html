@@ -219,7 +219,24 @@ padding: 0 0 0 0;
 </head>
 <!-- Other functionalities: Pagination, Sorting, Form for Discussion, Posting -->
 <body>
-
+<div id="LoginScreen" style="display:none">
+<form id="loginForm" name="loginForm" class="loginFormClass">
+	<h1>Login - Siebel</h1>
+	<p>
+		<label for="uname">Username</label>
+		<input id="uname" name="uname" type="text" />
+	</p>
+	<p>
+		<label for="pword">Password</label>
+		<input id="pword" name="pword" type="password" />
+	</p>
+	<div id="login-button" class="clearfix">
+		<input id="loginSiebel" class="gen-button-font gen-button" type="button" name="login" value="Log in"/>
+	</div>
+	<div id="loginStatus">
+	</div>
+</form>
+</div>
 <!-- Top Menu -->
 <div class="menu">
 	<a href="#" class="active">Service Requests</a>
@@ -231,8 +248,8 @@ padding: 0 0 0 0;
 <table class="banner" width="98%">
 	<thead>
 		<tr>
-		<th width="50%">Welcome, <b><span id="userID"></span></b></th>
-		<th width="20%" align="right">
+		<th width="25%">Welcome, <b><span id="userID"></span></b> (<a id="logOut" href="#">Logout</a>)</th>
+		<th width="40%" align="center">
 		<form align="right"><!-- <img alt="List Service Requests" src="images/list.png" /> --><a class="displayList active" href="#" title="List Service Requests">List SRs</a><span>  |  </span><!-- <img alt="Create New Service Request" src="images/add.png"/> --><a class="create" href="#" title="Create New Service Request">Create New SR</a></form>
 		</th>
 		<th width="30%">
