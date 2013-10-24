@@ -266,7 +266,7 @@
 						catch (err) 
 						{
 							alert("SR App comming here -- 1");
-							$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now.</li></ul>');
+							$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now3.</li></ul>');
 							//document.getElementById("hrefCreateOpp").style.display = "none";
 							//document.getElementById("pager").style.display = "none";
 							$('#HomeView').show();
@@ -286,7 +286,7 @@
 					else
 					{
 						alert("SR App comming here -- 1");
-						$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now. Error:'+response.error.message+'</li></ul>');
+						$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now1. Error:'+response.error.message+'</li></ul>');
 						//document.getElementById("hrefCreateOpp").style.display = "none";
 						//document.getElementById("pager").style.display = "none";
 						$('#HomeView').show();
@@ -302,7 +302,7 @@
 			}
 			else
 			{
-				$("div#xmlTable1 div#results").append('<ul align="center"><li colspan="9">Unable to fetch records now. Error:'+response.error.message+'</li></ul>');
+				$("div#xmlTable1 div#results").append('<ul align="center"><li colspan="9">Unable to fetch records now2. Error:'+response.error.message+'</li></ul>');
 				//document.getElementById("hrefCreateOpp").style.display = "none";
 				//document.getElementById("pager").style.display = "none";
 				$('#HomeView').show();
