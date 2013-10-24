@@ -263,6 +263,7 @@
 						} 
 						catch (err) 
 						{
+							alert("SR App comming here -- 1");
 							$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now.</li></ul>');
 							//document.getElementById("hrefCreateOpp").style.display = "none";
 							//document.getElementById("pager").style.display = "none";
@@ -282,6 +283,7 @@
 					}
 					else
 					{
+						alert("SR App comming here -- 1");
 						$("div#xmlTable1 div#results").append('<ul align="center"><li >Unable to fetch records now. Error:'+response.error.message+'</li></ul>');
 						//document.getElementById("hrefCreateOpp").style.display = "none";
 						//document.getElementById("pager").style.display = "none";
