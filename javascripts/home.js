@@ -114,7 +114,7 @@
 	
 	function loadTheRecords() 
 	{
-		console.log("In Loadtherecords HOME.JS");
+		console.log("In Loadtherecords HOME.JS---5");
 		var xmlDoc = '';
 		
 		if (INITIALIZED == 0)
