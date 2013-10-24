@@ -1,3 +1,4 @@
+	alert("jom.js");
 	cssdropdown.startchrome("chromemenu");
 	function encryptPassword(pString) 
 	{
