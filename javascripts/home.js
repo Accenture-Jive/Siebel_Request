@@ -360,6 +360,7 @@
 	
 	//Login Form
 	$('#loginSiebel').live('click', function(){
+	alert("clicking seible request");
 		SiebelUser = $('#uname').val();
 		SiebelPassword = $('#pword').val(); //this needs to be encrypted
 		if (SiebelUser == "" || SiebelPassword == "")
